@@ -41,6 +41,25 @@ h2{font-size:1.8rem;margin:0 0 6px}h3{margin:0 0 6px}
 .fig{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:16px}
 .fig svg{width:100%;height:auto;display:block}.fig small{color:var(--mut)}
 .q{border-left:3px solid var(--acc);padding:4px 0 4px 16px;color:#c9d3f5;font-size:1.1rem;margin:18px 0}
+.vid{grid-column:1/-1;text-align:center}.vid video{width:100%;max-width:340px;border-radius:18px;background:#000;display:block;margin:12px auto 0}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin-top:8px}
+@media(max-width:760px){.proj{grid-template-columns:1fr}}
+.proj-k{display:inline-block;font:700 13px/1.4 ui-monospace,Menlo,Consolas,monospace;letter-spacing:.04em;color:var(--ink);border-bottom:2px solid var(--acc);padding-bottom:4px;margin:0}
+.proj-t{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.05;text-transform:uppercase;letter-spacing:-.02em;margin:16px 0 12px}
+.proj-d{color:var(--mut);font-size:1.05rem;margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 12px;font:13px ui-monospace,Menlo,Consolas,monospace;color:#c9d3f5}
+.res{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}.res div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}.res b{display:block;color:var(--acc);font-size:1.5rem;line-height:1.2}.res span{color:var(--mut);font-size:13px}
+.win{background:#0d1117;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 14px 40px #0008}
+.win-b{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#161b22;border-bottom:1px solid var(--line)}.win-b i{width:11px;height:11px;border-radius:50%;display:block}.win-b span{margin-left:12px;font:12px ui-monospace,Menlo,Consolas,monospace;color:var(--mut);background:#0d1117;border:1px solid var(--line);border-radius:6px;padding:2px 12px}
+.code{margin:0;padding:14px 16px;font:12.5px/1.65 ui-monospace,Menlo,Consolas,monospace;color:#d6deeb;overflow-x:auto;white-space:pre}.code .k{color:#c792ea}.code .c{color:#6b7a99}.code .n{color:#f78c6c}.code .s{color:#ecc48d}
+.out{display:flex;flex-direction:column;padding:10px 16px;background:#0a0e14;border-top:1px solid var(--line);font:12.5px/1.6 ui-monospace,Menlo,Consolas,monospace;color:var(--acc)}
+.win-f{display:flex;justify-content:space-between;padding:6px 14px;background:#1f6feb;color:#fff;font:11.5px ui-monospace,Menlo,Consolas,monospace}
+.proj-r small{display:block;margin-top:8px;color:var(--mut)}
+.win img{display:block;width:100%}
+.figs{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:6px}
+.figs figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+.figs img{width:100%;display:block;border-radius:8px;background:#fff}
+.figs figcaption{color:var(--mut);font-size:14px;margin-top:8px}
 </style>
 </head>
 <body>
@@ -73,17 +92,34 @@ h2{font-size:1.8rem;margin:0 0 6px}h3{margin:0 0 6px}
 <h2 data-fr="Cursus ingénieur" data-en="Engineering course"></h2>
 <p class="lead" data-fr="Élève ingénieur à l’ENSEEIHT (INP Toulouse), après deux ans de classe préparatoire PSI." data-en="Engineering student at ENSEEIHT (INP Toulouse), after two years of PSI preparatory classes."></p>
 <div class="grid">
-<div class="card todo"><h3 data-fr="Projets" data-en="Projects"></h3><p data-fr="Mes projets et réalisations du cycle ingénieur viendront s’ajouter ici." data-en="My projects and productions from the engineering cycle will be added here."></p></div>
+<div class="proj" style="grid-column:1/-1">
+<div class="proj-l">
+<p class="proj-k" data-fr="TIPE · PHYSIQUE, MÉCANIQUE & INFORMATIQUE" data-en="TIPE · PHYSICS, MECHANICS & COMPUTING"></p>
+<h2 class="proj-t" data-fr="Stabilisation en vol des flèches" data-en="In-flight stabilisation of arrows"></h2>
+<p class="proj-d" data-fr="Comment les plumes améliorent-elles la stabilité d’une flèche ? Un modèle physique (nombre de Reynolds, traînée, oscillateur amorti), des mesures au chronographe et à la caméra slow-motion, puis un traitement des données en Python." data-en="How do feathers improve an arrow’s stability? A physical model (Reynolds number, drag, damped oscillator), chronograph and slow-motion measurements, then data analysis in Python."></p>
+<div class="chips"><span>Python</span><span>NumPy</span><span data-fr="Mécanique du vol" data-en="Flight mechanics"></span><span data-fr="Nombre de Reynolds" data-en="Reynolds number"></span><span data-fr="Oscillateur amorti" data-en="Damped oscillator"></span><span data-fr="Chronographe" data-en="Chronograph"></span><span data-fr="Caméra slow-motion" data-en="Slow-motion camera"></span></div>
+<div class="res"><div><b>×2,26</b><span data-fr="traînée avec plumes" data-en="drag with feathers"></span></div><div><b>S<sub>g</sub> ≪ 1</b><span data-fr="stabilisation aérodynamique" data-en="aerodynamic stabilisation"></span></div></div>
+<p style="margin:18px 0 0"><a class="btn" href="TIPE_Sellaouti_Presentation.pdf" target="_blank" rel="noopener" data-fr="📄 Présentation TIPE (PDF)" data-en="📄 TIPE presentation (PDF)"></a></p>
+</div>
+<div class="proj-r"><div class="win"><div class="win-b"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span>tipe.stabilite_fleche</span></div>
+<img src="tipe-code.png" alt="Code Python de mon TIPE">
+<div class="win-f"><span data-fr="Code d’analyse du TIPE" data-en="TIPE analysis code"></span><span>Python · NumPy · Matplotlib</span></div></div>
+<small data-fr="Mon code Python : lissage des mesures et tracé de la hauteur de la flèche." data-en="My Python code: smoothing the measurements and plotting the arrow’s height."></small></div>
+</div>
+<div class="figs">
+<figure><img src="tipe-graphe.png" alt="Hauteur de la flèche en fonction du temps"><figcaption data-fr="Hauteur de la flèche en fonction du temps : avec plume, les oscillations sont bien plus faibles et amorties." data-en="Arrow height over time: with feathers, oscillations are much smaller and damped."></figcaption></figure>
+<figure><img src="tipe-slowmo.jpg" alt="Analyse image par image"><figcaption data-fr="Analyse image par image de la vidéo slow-motion." data-en="Frame-by-frame analysis of the slow-motion video."></figcaption></figure>
+</div>
 <div class="card todo"><h3 data-fr="Compétences en action" data-en="Skills in action"></h3><p data-fr="À compléter." data-en="To be completed."></p></div>
 </div></section>
 
 <section id="mobility"><p class="kick">// S9 · 17 <span data-fr="semaines" data-en="weeks"></span></p>
 <h2 data-fr="Mobilité internationale" data-en="International mobility"></h2>
-<p class="lead" data-fr="Trois projets, alignés sur trois professionnels qui m’inspirent. En construction." data-en="Three projects, aligned with three professionals who inspire me. Work in progress."></p>
+<p class="lead" data-fr="Trois projets de mobilité : le Canada, les États-Unis et la Tunisie." data-en="Three mobility projects: Canada, the United States and Tunisia."></p>
 <div class="grid">
-<div class="card todo"><h3>01</h3><p data-fr="Destination, structure, profil associé : à venir." data-en="Destination, organisation, matching profile: coming soon."></p></div>
-<div class="card todo"><h3>02</h3><p data-fr="Destination, structure, profil associé : à venir." data-en="Destination, organisation, matching profile: coming soon."></p></div>
-<div class="card todo"><h3>03</h3><p data-fr="Destination, structure, profil associé : à venir." data-en="Destination, organisation, matching profile: coming soon."></p></div>
+<div class="card"><p class="kick">01 · Canada</p><h3>Polytechnique Montréal</h3><p data-fr="Mieux maîtriser l’anglais dans un environnement international et choisir un domaine d’étude : le génie informatique et logiciel." data-en="Improve my English in an international environment and choose a field of study: computer and software engineering."></p></div>
+<div class="card"><p class="kick">02 · États-Unis / United States</p><h3>Georgia Tech</h3><p data-fr="Mieux maîtriser l’anglais et me spécialiser dans un domaine qui m’attire : l’intelligence artificielle et le machine learning." data-en="Improve my English and specialise in a field that attracts me: artificial intelligence and machine learning."></p></div>
+<div class="card"><p class="kick">03 · Tunisie / Tunisia</p><h3 data-fr="INSAT, Université de Carthage" data-en="INSAT, University of Carthage"></h3><p class="mut" data-fr="Institut National des Sciences Appliquées et de Technologie" data-en="National Institute of Applied Sciences and Technology"></p><p data-fr="Si j’intègre l’équipe nationale de Tunisie et me qualifie aux Jeux Olympiques, je pars à l’INSAT pour mieux les préparer." data-en="If I join the Tunisian national team and qualify for the Olympic Games, I go to INSAT to prepare for them better."></p><p data-fr="Sinon : un double diplôme à l’École Nationale d’Ingénieurs de Tunis (ENIT) en troisième année, pour mieux préparer la qualification aux JO de 2032." data-en="Otherwise: a double degree at the National Engineering School of Tunis (ENIT) in third year, to better prepare for qualification for the 2032 Olympics."></p></div>
 </div></section>
 
 <section id="civic"><p class="kick">// transmettre</p>
@@ -111,8 +147,12 @@ h2{font-size:1.8rem;margin:0 0 6px}h3{margin:0 0 6px}
 <div class="grid">
 <div class="card"><h3>CV</h3><a class="btn" href="CV_Ali_Sellaouti_FR.pdf" target="_blank">Français (PDF)</a><a class="btn o" href="CV_Ali_Sellaouti_EN.pdf" target="_blank">English (PDF)</a></div>
 <div class="card"><h3>LinkedIn</h3><a class="btn" href="https://www.linkedin.com/in/ali-sellaouti-06668943a/" target="_blank" rel="noopener" data-fr="Mon profil" data-en="My profile"></a></div>
-<div class="card"><h3 data-fr="Vidéo de présentation (2 min 18, anglais)" data-en="Elevator pitch video (2 min 18, English)"></h3><a class="btn" href="https://www.youtube.com/shorts/-RzlUBfJuGw" target="_blank" rel="noopener" data-fr="▶ Voir la vidéo" data-en="▶ Watch the video"></a></div>
-<div class="card todo"><h3>Role models</h3><p data-fr="3 profils analysés : à venir." data-en="3 analysed profiles: coming soon."></p></div>
+<div class="card vid"><h3 data-fr="Vidéo de présentation (2 min 55, anglais)" data-en="Elevator pitch video (2 min 55, English)"></h3><video controls playsinline preload="metadata" src="pitch.mp4"></video></div>
+<div class="card" style="grid-column:1/-1"><h3 data-fr="Role models : 3 profils analysés" data-en="Role models: 3 analysed profiles"></h3><div class="grid">
+<div><p class="kick">Rochdy</p><p><b data-fr="Ingénieur en intelligence artificielle (alternance)" data-en="Artificial intelligence engineer (work-study)"></b></p><p data-fr="Il utilise la donnée et le machine learning pour optimiser les activités d’une entreprise. Ce que j’en retiens : l’IA vaut surtout par son impact concret pour les utilisateurs." data-en="He uses data and machine learning to optimise a company’s activities. What I learn: AI is most valuable when it has a real impact for users."></p><p class="mut" data-fr="Lien avec ma mobilité : Georgia Tech (IA)" data-en="Link to my mobility: Georgia Tech (AI)"></p></div>
+<div><p class="kick">Orhen</p><p><b data-fr="Business analyst et conduite du changement (IT)" data-en="Business analyst and change management (IT)"></b></p><p data-fr="Ingénieur en génie logiciel (Bac+5), consultant chez Orange et Stellantis, il pilote des projets informatiques. Ce que j’en retiens : le technique est plus fort quand on sait aussi guider les gens." data-en="A software engineer (5-year degree) and consultant at Orange and Stellantis, he manages IT projects. What I learn: technical skills are stronger when you can also guide people."></p><p class="mut" data-fr="Lien avec ma mobilité : Polytechnique Montréal (génie logiciel)" data-en="Link to my mobility: Polytechnique Montréal (software engineering)"></p></div>
+<div><p class="kick">Rémi</p><p><b data-fr="Ingénieur en cybersécurité, Direction générale de l’armement" data-en="Cybersecurity engineer, French defence procurement agency (DGA)"></b></p><p data-fr="Il sécurise des systèmes sur tout leur cycle de vie, après une reconversion réussie. Ce que j’en retiens : il faut rester curieux et suivre les technologies pour protéger ce qu’on construit." data-en="He secures systems throughout their whole life cycle, after a successful career change. What I learn: stay curious and follow technology to protect what you build."></p><p class="mut" data-fr="Lien avec ma mobilité : apprendre en continu, à l’INSAT / ENIT" data-en="Link to my mobility: keep learning, at INSAT / ENIT"></p></div>
+</div></div>
 <div class="card todo"><h3 data-fr="Stages" data-en="Internships"></h3><p data-fr="À compléter (S6, S8)." data-en="To be completed (S6, S8)."></p></div>
 </div></section>
 </main>
