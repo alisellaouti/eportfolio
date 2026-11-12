@@ -60,6 +60,17 @@ h2{font-size:1.8rem;margin:0 0 6px}h3{margin:0 0 6px}
 .figs figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
 .figs img{width:100%;display:block;border-radius:8px;background:#fff}
 .figs figcaption{color:var(--mut);font-size:14px;margin-top:8px}
+.sprow{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:20px;align-items:start;margin-top:8px}
+@media(max-width:700px){.sprow{grid-template-columns:1fr}}
+.spp{width:100%;border-radius:16px;display:block;border:1px solid var(--line)}
+.tl{position:relative;margin:22px 0 6px;padding-left:26px;border-left:2px solid var(--line);max-width:760px}
+.tl .it{position:relative;margin:0 0 22px;display:flow-root}
+.tl .it:before{content:"";position:absolute;left:-33px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 4px var(--bg)}
+.tl .d{font:700 13px ui-monospace,Menlo,Consolas,monospace;color:var(--acc)}
+.tl .t{font-weight:700}.tl .s{color:var(--mut);font-size:14px}
+.tl img{float:right;margin:0 0 8px 16px;max-width:min(38%,230px);max-height:280px;width:auto;height:auto;border-radius:12px;border:1px solid var(--line)}
+.tl .ph2{float:right;margin:0 0 8px 16px;display:flex;flex-direction:column;gap:6px;width:min(38%,230px)}.tl .ph2 img{float:none;margin:0;max-width:100%;max-height:none;width:100%}.tl .cap{font-size:12px;color:var(--mut);margin-top:-2px}
+.tl .ph2.row{flex-direction:row;width:min(62%,400px)}.tl .ph2.row img{width:calc(50% - 3px)}
 </style>
 </head>
 <body>
@@ -138,6 +149,24 @@ h2{font-size:1.8rem;margin:0 0 6px}h3{margin:0 0 6px}
 <div class="card"><h3 data-fr="En compétition" data-en="In competition"></h3><p data-fr="4 championnats de France, dont 2 en 2026. Vice-champion de France en 2025." data-en="4 French Championships, including 2 in 2026. French vice-champion in 2025."></p></div>
 <div class="card"><h3>Paris 2024</h3><p data-fr="Pendant les Jeux Olympiques, j’ai animé des initiations au tir à l’arc au Club France pour la Fédération." data-en="During the Olympic Games, I led archery introductions at Club France for the Federation."></p></div>
 <div class="card"><h3 data-fr="Ce que ça m’apprend" data-en="What it teaches me"></h3><p data-fr="La discipline, la persévérance et le calme sous pression." data-en="Discipline, perseverance and staying calm under pressure."></p></div>
+</div>
+<p class="mut" style="margin-top:18px" data-fr="Aussi : informatique, vélo, agriculture." data-en="Also: computing, cycling, agriculture."></p><div class="sprow"><img class="spp" src="sp-portrait.jpg" alt="Ali Sellaouti au tir">
+<div class="card"><h3 data-fr="Qu’est-ce que le Beursault ?" data-en="What is Beursault?"></h3><p data-fr="Le Beursault est un tir à l’arc traditionnel pratiqué dans les jardins d’arc des compagnies d’arc, surtout en Île-de-France et en Picardie. Chaque année, une compagnie a son « Roy » : l’archer qui abat l’oiseau lors de son tir. Les Roys se retrouvent le 1er mai au Tir du Roy de France, créé en 1951." data-en="Beursault is a traditional form of archery practised in the archery gardens of “Compagnies d’Arc” (traditional archery companies), mainly in the Paris region and Picardy. Each year a company has its “Roy” (King): the archer who shoots down the bird target at its bird shoot. The Roys meet on 1 May at the Tir du Roy de France, held since 1951."></p>
+</div></div>
+<h3 style="margin-top:28px" data-fr="Mon parcours en dates" data-en="My journey in dates"></h3>
+<div class="tl">
+<div class="it"><div class="d" data-fr="4 octobre 2026" data-en="4 October 2026"></div><div class="t" data-fr="Championnat de France de Beursault" data-en="French Beursault Championship"></div><div class="s" data-fr="Participation" data-en="Participation"></div></div>
+<div class="it"><div class="ph2"><img src="sp-riom-portrait.jpg" alt="Ali Sellaouti au championnat de France TAE à Riom"><span class="cap" data-fr="Photo : FFTA" data-en="Photo: FFTA"></span><img src="sp-riom.jpg" alt="Pas de tir du championnat de France TAE à Riom"></div><div class="d" data-fr="27 juillet 2026" data-en="27 July 2026"></div><div class="t" data-fr="Championnat de France TAE, 70 m, arc classique" data-en="French outdoor Championship, 70 m, recurve"></div><div class="s" data-fr="Riom, au nom de la Compagnie d’arc de Clichy-sous-Bois" data-en="Riom, representing the Clichy-sous-Bois Archery Company"></div></div>
+<div class="it"><div class="d" data-fr="7 juin 2026" data-en="7 June 2026"></div><div class="t" data-fr="Championnat départemental TAE, distance nationale (50 m) : 3e place" data-en="Departmental outdoor championship, national distance (50 m): 3rd place"></div></div>
+<div class="it"><div class="d" data-fr="31 mai 2026" data-en="31 May 2026"></div><div class="t" data-fr="Championnat départemental TAE, distance internationale (70 m) : vice-champion départemental" data-en="Departmental outdoor championship, international distance (70 m): departmental vice-champion"></div></div>
+<div class="it"><img src="sp-regional-beursault.jpg" alt="Podium du championnat régional de Beursault" loading="lazy"><div class="d" data-fr="8 mai 2026" data-en="8 May 2026"></div><div class="t" data-fr="Championnat régional de Beursault : 3e place" data-en="Regional Beursault Championship: 3rd place"></div></div>
+<div class="it"><div class="ph2 row"><img src="sp-tir-roy-france-2.jpg" alt="Ali Sellaouti en plein tir, Tir du Roy de France"><img src="sp-tir-roy-france.jpg" alt="Ali Sellaouti avec le cordon de Roy"></div><div class="d" data-fr="1er mai 2026" data-en="1 May 2026"></div><div class="t" data-fr="Tir du Roy de France" data-en="Tir du Roy de France"></div><div class="s" data-fr="Participation, en tant que Roy de la compagnie de Clichy-sous-Bois et Roy de la famille de Noisy-le-Sec" data-en="Took part as Roy of the Clichy-sous-Bois company and Roy of the Noisy-le-Sec family"></div></div>
+<div class="it"><img src="sp-roy-famille.jpg" alt="Roy de la famille de Noisy-le-Sec" loading="lazy"><div class="d" data-fr="4 avril 2026" data-en="4 April 2026"></div><div class="t" data-fr="Roy de la famille de Noisy-le-Sec" data-en="Roy (King) of the Noisy-le-Sec family"></div></div>
+<div class="it"><img src="sp-roy-compagnie.jpg" alt="Roy de la compagnie de Clichy-sous-Bois" loading="lazy"><div class="d" data-fr="8 mars 2026" data-en="8 March 2026"></div><div class="t" data-fr="Roy de la Compagnie d’arc de Clichy-sous-Bois" data-en="Roy (King) of the Clichy-sous-Bois Archery Company"></div></div>
+<div class="it"><img src="sp-2025-vice-france.jpg" alt="Podium du championnat de France de Beursault 2025" loading="lazy"><div class="d" data-fr="5 octobre 2025" data-en="5 October 2025"></div><div class="t" data-fr="Vice-champion de France de Beursault" data-en="French Beursault vice-champion"></div></div>
+<div class="it"><div class="d" data-fr="Juillet – août 2024" data-en="July – August 2024"></div><div class="t" data-fr="Animateur de tir à l’arc aux JO de Paris 2024" data-en="Archery instructor at the Paris 2024 Olympics"></div><div class="s" data-fr="Club France, pour la Fédération française de tir à l’arc" data-en="Club France, for the French Archery Federation"></div></div>
+<div class="it"><div class="d" data-fr="Juin 2024" data-en="June 2024"></div><div class="t" data-fr="Début comme entraîneur bénévole" data-en="Started as a volunteer coach"></div><div class="s" data-fr="Compagnie d’arc de Clichy-sous-Bois" data-en="Clichy-sous-Bois Archery Club"></div></div>
+<div class="it"><div class="t" data-fr="Et plusieurs autres participations et titres en compétition." data-en="And several other competition participations and titles."></div></div>
 </div>
 <p class="mut" style="margin-top:18px" data-fr="Aussi : informatique, vélo, agriculture." data-en="Also: computing, cycling, agriculture."></p></section>
 
